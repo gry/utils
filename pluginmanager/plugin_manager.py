@@ -5,12 +5,12 @@ class PluginManager():
     
     
     def getPlugins(self, categories = None):
-    """Returns the plugin_list of all plugins of the given categories,
-    or all the plugins if categories is not specified
-    Returns: List[Subclass<Plugin>]
-    Params:
-        categories: List[String]
-    """
+        """Returns the plugin_list of all plugins of the given categories,
+        or all the plugins if categories is not specified
+        Returns: List[Subclass<Plugin>]
+        Params:
+            categories: List[String]
+        """
         import plugins
         from plugins.plugin import Plugin
         if categories is None or len(categories) == 0:

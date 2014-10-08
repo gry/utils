@@ -13,7 +13,7 @@ class ExamplePlugin(Plugin):
         self.kwargs = kwargs
 
     def run(self, url, method,*args, **kwargs):
-        print "Executing %s" %self.__name__()
+        print "Executing %s" %self.name
         print url, method
         print self.args
         print args
